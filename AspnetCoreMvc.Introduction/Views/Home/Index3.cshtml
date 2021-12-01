@@ -1,0 +1,21 @@
+﻿@model AspnetCoreMvc.Introduction.Models.EmployeeListViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index3</title>
+</head>
+<body>
+    @foreach (var item in Model.Employees)//SONRADAN INDEX3E BİR ŞEY EKLEMEK İSTERSEM KULLANABİLMEK İÇİN.//Bu razor syntaxıdır.Dinamik yapıları kullanarak html üretir. Eleman kadar tablo oluşturmamız lazım gibi.
+    {
+        @item.FirstName
+        <br/>
+    }
+</body>
+</html>

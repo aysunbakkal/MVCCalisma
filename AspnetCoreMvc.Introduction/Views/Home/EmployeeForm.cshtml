@@ -1,0 +1,23 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>EmployeeForm</title>
+</head>
+<body>
+    FORM DATASI GÖNDERME
+    form submit olduğunda neresi çalışacak?
+    @using (Html.BeginForm("Index10","Home"))
+    {
+        <b>Key : </b>
+        @Html.TextBox("key")
+        <input type="submit" value="Search"/>
+    }
+</body>
+</html>
